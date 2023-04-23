@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Dev server</title>
+  </head>
+  <body>
+
+
+    <header class="header container">
+     <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="#" class="header__resume btn">Resume</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+     </nav>
+    </header>
+    
+    <!-- Mobile Navigation  -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+
+
+   <main>
+    <section class="project container">
+      <img class="project__img" src="/My project.png" alt="Profile picture">
+      <h2 class="project__subtitle">Hi, I'm Kamoliddin  👋</h2>
+      <h1 class="project__title">UPCOMING <br> FRONT-END DEVELOPER</h1>
+      <p class="project__description">An enthusiastic and passionate learner as well as <strong> forthcoming Web Developer</strong>
+       creating stunning pixel-perfect interactive websites/application with <strong> HTML, CSS and
+       JAVASCRIPT.</strong>
+      </p>
+      <a class="project__btn btn" href="#">Reach out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">Hi there! I'm Kamoliddin, an <strong> upcoming Frontend Developer.</strong> I tend to wake in the early morning, brew up a coffee, open up my PC  and build things that makes me on the web all day.</p>
+        <p class="about__description">All the people I know say that I'm obsessed with it, that is right, I'm utterly driven to learn new things</p>
+        <p class="about__description">In the nearest future, I will be studying <a>JAVASCRIPT</a> and I'm going to acquire every single thing in this language!</p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle">Technologies</h3>
+        <div class="about__ul-container">
+        <ul class="about__ul">
+          <li class="about__list">JavaScript</li>
+          <li class="about__list">CSS</li>
+          <li class="about__list">HTML</li>
+        </ul>
+        <ul class="about__ul">
+          <li class="about__list">ReactJS</li>
+          <li class="about__list">NextJS</li>
+          <li class="about__list">TailwindCSS</li>
+        </ul>
+      </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" 
+        src="https://via.placeholder.com/720"
+        data-src="/public/must_be_edited_image-removebg-pr.jpg" alt="Profile picture">
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured projects</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">Creating structured web pages</h2>
+        <a class="featured__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">Building impressive 
+        websites in order to learn and acquire the <a>WEBSITE DEVELOPMENT</a>
+        thoroughly as well as deploying them by communicating with other developers. Furthermore, completing the complicated and responsive layouts! 
+      </p>
+      <div class="featured__info-container">
+         <div>
+          <h3 class="featured__label">Tech stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">TailwindCSS</li>
+            <li class="featured__info">Python</li>
+            <li class="featured__info">C++</li>
+            <li class="featured__info">NextJs</li>
+            <li class="featured__info">Axios</li>
+            <li class="featured__info">Supabase</li>
+            <li class="featured__info">Stripe</li>
+          </ul>
+         </div>
+         <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__info">Junior & Senior</p>
+         </div>
+         <div>
+          <h3 class="featured__label">Timeline</h3>
+          <p class="featured__info">April 2023 - present</p>
+         </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App1.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App2.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App3.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App4.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App5.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App6.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App7.png" alt="Website Pictures">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" 
+            src="https://via.placeholder.com/1920x968"
+            data-src="./public/App8.png" alt="Website Pictures">
+          </div>
+        </div>
+    </section>
+
+    <section class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">I try to create and build projects as much complicated and with a clean code as possible in order to get the full potential as well as maintaining users with the finest user experince.</p>
+      <div class="work__container">
+
+        <!-- Project 1 -->
+        <h3 class="work__project-title">Wax Motif</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy loading"
+          src="https://via.placeholder.com/900"
+           data-src="/public/waxmoney.png" alt="">
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">Wax Motif</h3>
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim pariatur deserunt do ad exercitation.</p>
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum commodo. Do esse excepteur cillum deserunt duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing cupidatat sint.</p>
+          <a class="btn work__project-btn" href="">Website</a>
+        </div>
+  
+        <!-- Project 2 -->
+        <h3 class="work__project-title">Draze Force</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy loading"
+          src="https://via.placeholder.com/900"
+           data-src="/public/drazeforce.png" alt="">
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">Draze Force</h3>
+          <p class="work__project-description1">Sunt sint labore officia irure. Dolore pariatur nisi deserunt sunt exercitation excepteur do reprehenderit fugiat Lorem sint ut.</p>
+          <p class="work__project-description2">Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non amet nostrud officia duis.</p>
+          <a class="btn work__project-btn" href="">Website</a>
+        </div>
+  
+        <!-- Project 3 -->
+        <h3 class="work__project-title">Artren</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy loading"
+          src="https://via.placeholder.com/900"
+           data-src="/public/artren.png" alt="">
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle">Artren</h3>
+          <p class="work__project-description1">Aliquip eu ad est reprehenderit veniam irure exercitation in velit enim ipsum.</p>
+          <p class="work__project-description2">Elit est amet quis incididunt officia velit eiusmod do amet. Sint non qui nulla sit ex cillum non pariatur velit proident ut aliqua fugiat incididunt id minim.</p>
+          <a class="btn work__project-btn" href="">Website</a>
+        </div>
+  
+        <!-- Project 4 -->
+        <h3 class="work__project-title">Platform Pro
+        </h3>
+        <div class="work__img-wrapper work__image4">
+          <img class="lazy loading"
+          src="https://via.placeholder.com/900"
+           data-src="/public/platformpro.png" alt="">
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle">Platform Pro</h3>
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim pariatur deserunt do ad exercitation.
+          </p>
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum commodo. Do esse excepteur cillum deserunt duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing cupidatat sint.
+          </p>
+          <a class="btn work__project-btn" href="">Website</a>
+        </div>
+  
+        <!-- Project 5 -->
+        <h3 class="work__project-title">Wallys Vegan</h3>
+        <div class="work__img-wrapper work__image5">
+          <img class="lazy loading"
+          src="https://via.placeholder.com/900"
+           data-src="/public/wallysvegan.png" alt="">
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project-subtitle">Wallys Vegan</h3>
+          <p class="work__project-description1">Sunt sint labore officia irure. Dolore pariatur nisi deserunt sunt exercitation excepteur do reprehenderit fugiat Lorem sint ut.</p>
+          <p class="work__project-description2">Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non amet nostrud officia duis.</p>
+          <a class="btn work__project-btn" href="">Website</a>
+        </div>
+  
+        <!-- Project 6 -->
+        <h3 class="work__project-title">Old Portfolio</h3>
+        <div class="work__img-wrapper work__image6">
+          <img class="lazy loading"
+          src="https://via.placeholder.com/900"
+           data-src="/public/portfolio.png" alt="">
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project-subtitle">OLd portfolio</h3>
+          <p class="work__project-description1">Aliquip eu ad est reprehenderit veniam irure exercitation in velit enim ipsum.</p>
+          <p class="work__project-description2">Elit est amet quis incididunt officia velit eiusmod do amet. Sint non qui nulla sit ex cillum non pariatur velit proident ut aliqua fugiat incididunt id minim.</p>
+          <a class="btn work__project-btn" href="">Website</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">
+        Get In Contact
+      </h2>
+      <p class="contact__description">Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
+      <a class="contact__btn btn" href="mailto:kuliyevkamoliddin5@gmail.com" target="_blank">Reach out</a>
+    </section>
+  </main>
+
+<footer class="footer container section">
+   <h3 class="footer__title">~ Kuliyev Kamoliddin ~</h3>
+</footer> 
+
+
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
